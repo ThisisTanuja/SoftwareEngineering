@@ -1,0 +1,108 @@
+1. create many players
+
+[
+    {
+        "playerName": "Kyler Murray",
+        "jerseyNumber": 1,
+        "teamName": "Cardinals"
+    },
+    {
+        "playerName": "Russel Wilson",
+        "jerseyNumber": 3,
+        "teamName": "Seahawks" 
+    },
+    {
+        "playerName": "Dak Prescott",
+        "jerseyNumber": 4,
+        "teamName": "Cowboys"
+    },
+	{
+		"playerName": "Jalen Ramsey",
+        "jerseyNumber": 5,
+        "teamName": "Rams"
+	},
+	{
+		"playerName": "Matthew Stafford",
+        "jerseyNumber": 9,
+        "teamName": "Rams"
+	},
+	{
+		"playerName": "Tyreek Hill",
+        "jerseyNumber": 10,
+        "teamName": "Chiefs"
+	},
+	{
+		"playerName": "Julio Jones",
+        "jerseyNumber": 2,
+        "teamName": "Titans"
+	},
+	{
+		"playerName": "Ben Roethlisberger",
+        "jerseyNumber": 7,
+        "teamName": "Steelers"
+	},
+	{
+		"playerName": "Lamar Jackson",
+        "jerseyNumber": 8,
+        "teamName": "Ravens"
+	},
+	{
+		"playerName": "A.J. Brown",
+        "jerseyNumber": 11,
+        "teamName": "Titans"
+	},
+	{
+		"playerName": "Tom Brady",
+        "jerseyNumber": 12,
+        "teamName": "Buccaneers"
+	},
+	{
+		"playerName": "Marcus Maye",
+        "jerseyNumber": 20,
+        "teamName": "Jets"
+	},
+	{
+		"playerName": "Adam Thielen",
+        "jerseyNumber": 19,
+        "teamName": "Vikings"
+	},
+	{
+		"playerName": "Keenan Allen",
+        "jerseyNumber": 13,
+        "teamName": "Chargers"
+	},
+	{
+		"playerName": "Stefon Diggs",
+        "jerseyNumber": 14,
+        "teamName": "Bills"
+	},{
+		"playerName": "Patrick Mahomes",
+        "jerseyNumber": 15,
+        "teamName": "Chiefs"
+	},
+	{
+		"playerName": "Justin Jefferson",
+        "jerseyNumber": 18,
+        "teamName": "Vikings"
+	},
+	{
+		"playerName": "Davante Adams",
+        "jerseyNumber": 17,
+        "teamName": "Packers"
+	},
+	{
+		"playerName": "Tyler Lockett",
+        "jerseyNumber": 16,
+        "teamName": "Seahawks"
+	}
+]
+	
+	
+2. Create a player
+	{
+		"playerName": "Baker Mayfield",
+        "jerseyNumber": 6,
+        "teamName": "Browns"
+	}	
+	
+		

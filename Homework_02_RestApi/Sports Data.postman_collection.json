@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "04f789a2-314d-4809-a906-40021055b9ef",
+		"name": "Sports Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29509930"
+	},
+	"item": [
+		{
+			"name": "getAllPlayers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/players/getAllPlayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"getAllPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlayerById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"playerName\": \"John Doe\",\r\n  \"jerseyNumber\": 10,\r\n  \"team\": \"Team A\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/players/getPlayerById/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"getPlayerById",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlayersByTeam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/players/getPlayersByTeam/Vikings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"getPlayersByTeam",
+						"Vikings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createManyPlayers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"playerName\": \"Kyler Murray\",\r\n        \"jerseyNumber\": 1,\r\n        \"teamName\": \"Cardinals\"\r\n    },\r\n    {\r\n        \"playerName\": \"Russel Wilson\",\r\n        \"jerseyNumber\": 3,\r\n        \"teamName\": \"Seahawks\" \r\n    },\r\n    {\r\n        \"playerName\": \"Dak Prescott\",\r\n        \"jerseyNumber\": 4,\r\n        \"teamName\": \"Cowboys\"\r\n    },\r\n\t{\r\n\t\t\"playerName\": \"Jalen Ramsey\",\r\n        \"jerseyNumber\": 5,\r\n        \"teamName\": \"Rams\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Matthew Stafford\",\r\n        \"jerseyNumber\": 9,\r\n        \"teamName\": \"Rams\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Tyreek Hill\",\r\n        \"jerseyNumber\": 10,\r\n        \"teamName\": \"Chiefs\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Julio Jones\",\r\n        \"jerseyNumber\": 2,\r\n        \"teamName\": \"Titans\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Ben Roethlisberger\",\r\n        \"jerseyNumber\": 7,\r\n        \"teamName\": \"Steelers\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Lamar Jackson\",\r\n        \"jerseyNumber\": 8,\r\n        \"teamName\": \"Ravens\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"A.J. Brown\",\r\n        \"jerseyNumber\": 11,\r\n        \"teamName\": \"Titans\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Tom Brady\",\r\n        \"jerseyNumber\": 12,\r\n        \"teamName\": \"Buccaneers\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Marcus Maye\",\r\n        \"jerseyNumber\": 20,\r\n        \"teamName\": \"Jets\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Adam Thielen\",\r\n        \"jerseyNumber\": 19,\r\n        \"teamName\": \"Vikings\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Keenan Allen\",\r\n        \"jerseyNumber\": 13,\r\n        \"teamName\": \"Chargers\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Stefon Diggs\",\r\n        \"jerseyNumber\": 14,\r\n        \"teamName\": \"Bills\"\r\n\t},{\r\n\t\t\"playerName\": \"Patrick Mahomes\",\r\n        \"jerseyNumber\": 15,\r\n        \"teamName\": \"Chiefs\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Justin Jefferson\",\r\n        \"jerseyNumber\": 18,\r\n        \"teamName\": \"Vikings\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Davante Adams\",\r\n        \"jerseyNumber\": 17,\r\n        \"teamName\": \"Packers\"\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Tyler Lockett\",\r\n        \"jerseyNumber\": 16,\r\n        \"teamName\": \"Seahawks\"\r\n\t}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/players/createManyPlayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"createManyPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPlayer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n\t\t\"playerName\": \"Baker Mayfield\",\r\n        \"jerseyNumber\": 6,\r\n        \"teamName\": \"Browns\"\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/players/createPlayer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"createPlayer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePlayer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerName\" : \"Baker Jr.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/players/updatePlayer/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"updatePlayer",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllPlayers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/players/deleteAllPlayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"deleteAllPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePlayerById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/players/deletePlayerById/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"deletePlayerById",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePlayersByTeam",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/players/deletePlayersByTeam/Seahawks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"deletePlayersByTeam",
+						"Seahawks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
