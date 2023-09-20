@@ -1,0 +1,149 @@
+1. create many players
+
+[
+    {
+        "playerName": "Kyler Murray",
+        "jerseyNumber": 1,
+        "teamName": "Cardinals",
+		"totalGoals": 3,
+		"totalAssists": 17
+		
+    },
+    {
+        "playerName": "Russel Wilson",
+        "jerseyNumber": 3,
+        "teamName": "Seahawks",
+		"totalGoals": 1,
+		"totalAssists": 3
+    },
+    {
+        "playerName": "Dak Prescott",
+        "jerseyNumber": 4,
+        "teamName": "Cowboys",
+		"totalGoals": 10,
+		"totalAssists": 5
+    },
+	{
+		"playerName": "Jalen Ramsey",
+        "jerseyNumber": 5,
+        "teamName": "Rams",
+		"totalGoals": 7,
+		"totalAssists": 2
+	},
+	{
+		"playerName": "Matthew Stafford",
+        "jerseyNumber": 9,
+        "teamName": "Rams",
+		"totalGoals": 21,
+		"totalAssists": 3
+	},
+	{
+		"playerName": "Tyreek Hill",
+        "jerseyNumber": 10,
+        "teamName": "Chiefs",
+		"totalGoals": 3,
+		"totalAssists": 3
+	},
+	{
+		"playerName": "Julio Jones",
+        "jerseyNumber": 2,
+        "teamName": "Titans",
+		"totalGoals": 9,
+		"totalAssists": 3
+	},
+	{
+		"playerName": "Ben Roethlisberger",
+        "jerseyNumber": 7,
+        "teamName": "Steelers",
+		"totalGoals": 1,
+		"totalAssists": 11
+	},
+	{
+		"playerName": "Lamar Jackson",
+        "jerseyNumber": 8,
+        "teamName": "Ravens",
+		"totalGoals": 0,
+		"totalAssists": 1
+	},
+	{
+		"playerName": "A.J. Brown",
+        "jerseyNumber": 11,
+        "teamName": "Titans",
+		"totalGoals": 20,
+		"totalAssists": 3
+	},
+	{
+		"playerName": "Tom Brady",
+        "jerseyNumber": 12,
+        "teamName": "Buccaneers",
+		"totalGoals": 17,
+		"totalAssists": 2
+	},
+	{
+		"playerName": "Marcus Maye",
+        "jerseyNumber": 20,
+        "teamName": "Jets",
+		"totalGoals": 7,
+		"totalAssists": 6
+	},
+	{
+		"playerName": "Adam Thielen",
+        "jerseyNumber": 19,
+        "teamName": "Vikings",
+		"totalGoals": 0,
+		"totalAssists": 0
+	},
+	{
+		"playerName": "Keenan Allen",
+        "jerseyNumber": 13,
+        "teamName": "Chargers",
+		"totalGoals": 7,
+		"totalAssists": 5
+	},
+	{
+		"playerName": "Stefon Diggs",
+        "jerseyNumber": 14,
+        "teamName": "Bills",
+		"totalGoals": 4,
+		"totalAssists": 0
+	},{
+		"playerName": "Patrick Mahomes",
+        "jerseyNumber": 15,
+        "teamName": "Chiefs",
+		"totalGoals": 13,
+		"totalAssists": 2
+	},
+	{
+		"playerName": "Justin Jefferson",
+        "jerseyNumber": 18,
+        "teamName": "Vikings",
+		"totalGoals": 1,
+		"totalAssists": 7
+	},
+	{
+		"playerName": "Davante Adams",
+        "jerseyNumber": 17,
+        "teamName": "Packers",
+		"totalGoals": 10,
+		"totalAssists": 9
+	},
+	{
+		"playerName": "Tyler Lockett",
+        "jerseyNumber": 16,
+        "teamName": "Seahawks",
+		"totalGoals": 1,
+		"totalAssists": 19
+	}
+]
+	
+	
+2. Create a player
+	{
+		"playerName": "Baker Mayfield",
+        "jerseyNumber": 6,
+        "teamName": "Browns",
+		"totalGoals": 1,
+		"totalAssists": 9
+	}	
+	
+		

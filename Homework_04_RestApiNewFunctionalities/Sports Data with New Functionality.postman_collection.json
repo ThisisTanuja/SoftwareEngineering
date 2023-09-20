@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "23dc1464-0a33-4902-9ddc-38367609889c",
+		"name": "Sports Data with New Functionality",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29509930"
+	},
+	"item": [
+		{
+			"name": "createPlayer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n\t\t\"playerName\": \"Baker Mayfield\",\r\n        \"jerseyNumber\": 6,\r\n        \"teamName\": \"Browns\",\r\n\t\t\"totalGoals\": 1,\r\n\t\t\"totalAssists\": 9\r\n\t}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/players/createPlayer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"createPlayer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPlayers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/players/getAllPlayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"getAllPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createManyPlayers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"playerName\": \"Kyler Murray\",\r\n        \"jerseyNumber\": 1,\r\n        \"teamName\": \"Cardinals\",\r\n\t\t\"totalGoals\": 3,\r\n\t\t\"totalAssists\": 17\r\n\t\t\r\n    },\r\n    {\r\n        \"playerName\": \"Russel Wilson\",\r\n        \"jerseyNumber\": 3,\r\n        \"teamName\": \"Seahawks\",\r\n\t\t\"totalGoals\": 1,\r\n\t\t\"totalAssists\": 3\r\n    },\r\n    {\r\n        \"playerName\": \"Dak Prescott\",\r\n        \"jerseyNumber\": 4,\r\n        \"teamName\": \"Cowboys\",\r\n\t\t\"totalGoals\": 10,\r\n\t\t\"totalAssists\": 5\r\n    },\r\n\t{\r\n\t\t\"playerName\": \"Jalen Ramsey\",\r\n        \"jerseyNumber\": 5,\r\n        \"teamName\": \"Rams\",\r\n\t\t\"totalGoals\": 7,\r\n\t\t\"totalAssists\": 2\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Matthew Stafford\",\r\n        \"jerseyNumber\": 9,\r\n        \"teamName\": \"Rams\",\r\n\t\t\"totalGoals\": 21,\r\n\t\t\"totalAssists\": 3\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Tyreek Hill\",\r\n        \"jerseyNumber\": 10,\r\n        \"teamName\": \"Chiefs\",\r\n\t\t\"totalGoals\": 3,\r\n\t\t\"totalAssists\": 3\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Julio Jones\",\r\n        \"jerseyNumber\": 2,\r\n        \"teamName\": \"Titans\",\r\n\t\t\"totalGoals\": 9,\r\n\t\t\"totalAssists\": 3\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Ben Roethlisberger\",\r\n        \"jerseyNumber\": 7,\r\n        \"teamName\": \"Steelers\",\r\n\t\t\"totalGoals\": 1,\r\n\t\t\"totalAssists\": 11\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Lamar Jackson\",\r\n        \"jerseyNumber\": 8,\r\n        \"teamName\": \"Ravens\",\r\n\t\t\"totalGoals\": 0,\r\n\t\t\"totalAssists\": 1\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"A.J. Brown\",\r\n        \"jerseyNumber\": 11,\r\n        \"teamName\": \"Titans\",\r\n\t\t\"totalGoals\": 20,\r\n\t\t\"totalAssists\": 3\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Tom Brady\",\r\n        \"jerseyNumber\": 12,\r\n        \"teamName\": \"Buccaneers\",\r\n\t\t\"totalGoals\": 17,\r\n\t\t\"totalAssists\": 2\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Marcus Maye\",\r\n        \"jerseyNumber\": 20,\r\n        \"teamName\": \"Jets\",\r\n\t\t\"totalGoals\": 7,\r\n\t\t\"totalAssists\": 6\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Adam Thielen\",\r\n        \"jerseyNumber\": 19,\r\n        \"teamName\": \"Vikings\",\r\n\t\t\"totalGoals\": 0,\r\n\t\t\"totalAssists\": 0\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Keenan Allen\",\r\n        \"jerseyNumber\": 13,\r\n        \"teamName\": \"Chargers\",\r\n\t\t\"totalGoals\": 7,\r\n\t\t\"totalAssists\": 5\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Stefon Diggs\",\r\n        \"jerseyNumber\": 14,\r\n        \"teamName\": \"Bills\",\r\n\t\t\"totalGoals\": 4,\r\n\t\t\"totalAssists\": 0\r\n\t},{\r\n\t\t\"playerName\": \"Patrick Mahomes\",\r\n        \"jerseyNumber\": 15,\r\n        \"teamName\": \"Chiefs\",\r\n\t\t\"totalGoals\": 13,\r\n\t\t\"totalAssists\": 2\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Justin Jefferson\",\r\n        \"jerseyNumber\": 18,\r\n        \"teamName\": \"Vikings\",\r\n\t\t\"totalGoals\": 1,\r\n\t\t\"totalAssists\": 7\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Davante Adams\",\r\n        \"jerseyNumber\": 17,\r\n        \"teamName\": \"Packers\",\r\n\t\t\"totalGoals\": 10,\r\n\t\t\"totalAssists\": 9\r\n\t},\r\n\t{\r\n\t\t\"playerName\": \"Tyler Lockett\",\r\n        \"jerseyNumber\": 16,\r\n        \"teamName\": \"Seahawks\",\r\n\t\t\"totalGoals\": 1,\r\n\t\t\"totalAssists\": 19\r\n\t}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8089/players/createManyPlayers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"createManyPlayers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "countPlayersInATeam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/players/countPlayersInATeam/Rams",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"players",
+						"countPlayersInATeam",
+						"Rams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topGoalScorer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
