@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- setting the title for the webpage -->
+	<title>GoTeam Player Management</title>
+	
+	<!-- linking to an external stylesheet for styling the webpage -->
+	<link rel="stylesheet" type="text/css" href="../css/stylesheets.css">
+</head>
+
+<body>
+
+	<!-- Main content container for the webpage -->
+	<div class="content-container">
+	
+		<!-- Display the main header for the webpage -->
+		<h1>GoTeam Player Management</h1>
+		
+		<!-- Dropdown to select an action (e.g., get players, create players, etc.) -->
+		<label for="actionSelect">Select an Action:</label>
+		<select id="actionSelect">
+			<option value="">Select an action</option>
+			<option value="createPlayers">Create Players</option>
+			<option value="getPlayers">Get Players</option>
+			<option value="updatePlayer">Update Players</option>
+			<option value="deletePlayers">Delete Players</option>
+			<option value="countPlayers">Count Players</option>
+			<option value="topGoalScorer">Top Goal Scorer</option>
+		</select>
+
+		<!-- Button to trigger the selected action -->
+		<button id="indexGoButton">Go</button>
+	</div>
+	
+	<!-- External JavaScript file linked to add functionality to the webpage -->
+	<script src="../js/index.js"></script>
+
+</body>
+
+</html>

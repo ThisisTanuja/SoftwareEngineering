@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- setting the title for the webpage -->
+	<title>GoTeam Player Management - Create Players</title>
+
+	<!-- linking to an external stylesheet for styling the webpage -->
+	<link rel="stylesheet" type="text/css" href="../css/stylesheets.css">
+</head>
+
+<body>
+
+	<!-- Main content container for the webpage -->
+	<div class="content-container">
+
+		<!-- Button to navigate back to the homepage -->
+		<a href="index.html" class="home-button">Home</a>
+
+		<!-- Display the main header for the webpage -->
+		<h1>Create Players</h1>
+
+		<!-- Dropdown to select a sub-action (e.g., create a single player or multiple players) -->
+		<label for="subActionSelect">Select a Sub-Action:</label>
+		<select id="subActionSelect">
+			<option value="">Select a sub-action</option>
+			<option value="createPlayer">Create a Player</option>
+			<option value="createManyPlayers">Create Multiple Players</option>
+		</select>
+
+		<!-- Button to trigger the selected sub-action -->
+		<button id="createPlayersButton">Create</button>
+
+		<!-- Container to display input fields for creating a single player -->
+		<div id="createPlayerContainer" style="display: none;">
+			<h2>Create a Player</h2>
+			<form id="createPlayerForm">
+
+				<!-- Input fields for the player's name, jersey number, team name, total goals, and total assists -->
+				<label for="playerName">Player Name:</label>
+				<input type="text" id="playerName">
+				<br><br>
+				<label for="jerseyNumber">Jersey Number:</label>
+				<input type="number" id="jerseyNumber">
+				<br><br>
+				<label for="teamName">Team Name:</label>
+				<input type="text" id="teamName">
+				<br><br>
+				<label for="totalGoals">Total Goals:</label>
+				<input type="number" id="totalGoals">
+				<br><br>
+				<label for="totalAssists">Total Assists:</label>
+				<input type="number" id="totalAssists">
+				<br><br>
+				<button id="createPlayerSubmitButton">Add Player</button>
+			</form>
+			<br>
+			<div id="createdPlayerData"></div>
+		</div>
+
+		<!-- Container to display input fields for creating multiple players at once -->
+		<div id="createMultiplePlayersContainer" style="display: none;">
+			<h2>Create Multiple Players</h2>
+			<form id="createMultiplePlayersForm">
+
+				<!-- Textarea for inputting a list of players in JavaScript Array format -->
+				<label for="playersList">Enter Player List (JavaScript Array):</label>
+				<textarea id="playersList" rows="5"></textarea>
+				<br><br>
+				<button id="createMultiplePlayersSubmitButton">Add Players</button>
+			</form>
+			<br>
+			<div id="createdMultiplePlayersData"></div>
+		</div>
+	</div>
+
+	<!-- External JavaScript file linked to add functionality to the webpage -->
+	<script src="../js/CreatePlayers.js"></script>
+</body>
+
+</html>
