@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<!-- setting the title for the webpage -->
+    <title>GoTeam Player Management - Get Players</title>
+    
+    <!-- linking to an external stylesheet for styling the webpage -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheets.css">
+</head>
+
+<body>
+
+	<!-- Main content container for the webpage -->
+    <div class="content-container">
+    
+    	<!-- Button to navigate back to the homepage -->
+		<a href="index.html" class="home-button">Home</a> 
+		
+		<!-- Display the main header for the webpage -->
+        <h1>Get Players</h1>
+        
+        <!-- Dropdown to select a sub-action (e.g., get all players or get player by id, etc.) -->
+        <label for="subActionSelect">Select a Sub-Action:</label>
+        <select id="subActionSelect">
+            <option value="">Select a sub-action</option>
+            <option value="getAllPlayers">Get All Players</option>
+            <option value="getPlayerById">Get Player by ID</option>
+            <option value="getPlayersByTeam">Get Players by Team</option>
+        </select>
+
+        <!-- Button to trigger the selected sub-action -->
+        <button id="getPlayersButton">Get</button>
+
+        <!-- Input box for Player ID -->
+        <div id="playerIdInputContainer" style="display: none;">
+        	<br>
+            <label for="playerIdInput">Enter Player ID:</label>
+            <input type="number" id="playerIdInput">
+            <button id="displayIdButton">Display</button>
+        </div>
+
+        <!-- Input box for Team Name -->
+        <div id="teamNameInputContainer" style="display: none;">
+        	<br>
+            <label for="teamNameInput">Enter Team Name:</label>
+            <input type="text" id="teamNameInput">
+            <button id="displayTeamButton">Display</button>
+        </div>
+
+        <!-- Container to display results -->
+        <div id="resultsContainer">
+            <h2>Results</h2>
+            <!-- Section to display players' data based on the selected sub-action -->
+            <div id="allPlayersResult" style="display: none;">
+                <table id="allPlayersTable" border="1">
+                    <thead>
+                        <tr>
+                            <th>Player ID</th>
+                            <th>Player Name</th>
+                            <th>Jersey Number</th>
+                            <th>Team Name</th>
+                            <th>Total Goals</th>
+                            <th>Total Assists</th>
+                            <th>Badge Awarded</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows with player data will be inserted here using JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Linking the external JavaScript file -->
+    <script src="../js/GetPlayers.js"></script>
+</body>
+</html>

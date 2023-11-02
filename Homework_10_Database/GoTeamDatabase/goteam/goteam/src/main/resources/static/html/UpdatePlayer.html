@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- setting the title for the webpage -->
+	<title>GoTeam Player Management - Update Players</title>
+
+	<!-- linking to an external stylesheet for styling the webpage -->
+	<link rel="stylesheet" type="text/css" href="../css/stylesheets.css">
+</head>
+
+<body>
+
+	<!-- Main content container for the webpage -->
+	<div class="content-container">
+
+		<!-- Button to navigate back to the homepage -->
+		<a href="index.html" class="home-button">Home</a>
+
+		<!-- displaying the main header for the webpage -->
+		<h1>Update Players</h1>
+
+		<!-- Form element for updating players' details -->
+		<form id="updatePlayerForm">
+			
+			<!-- Label and input field for entering Player ID -->
+			<label for="playerId">Player ID:</label>
+			<input type="number" id="playerId" required>
+			<br><br>
+			
+			<!-- Label and input field for entering Player Name (optional) -->
+			<label for="playerName">Player Name:</label>
+			<input type="text" id="playerName" placeholder="Optional">
+			<br><br>
+			
+			<!-- Label and input field for entering Jersey Number (optional) -->
+			<label for="jerseyNumber">Jersey Number:</label>
+			<input type="number" id="jerseyNumber" placeholder="Optional">
+			<br><br>
+			
+			<!-- Label and input field for entering Team Name (optional) -->
+			<label for="teamName">Team Name:</label>
+			<input type="text" id="teamName" placeholder="Optional">
+			<br><br>
+			
+			<!-- Label and input field for entering Total Goals (optional) -->
+			<label for="totalGoals">Total Goals:</label>
+			<input type="number" id="totalGoals" placeholder="Optional">
+			<br><br>
+			
+			<!-- Label and input field for entering Total Assists (optional) -->
+			<label for="totalAssists">Total Assists:</label>
+			<input type="number" id="totalAssists" placeholder="Optional">
+			<br><br>
+			
+			<!-- Button to submit the form and trigger the update action -->
+			<button id="updatePlayerButton">Update Player</button>
+		</form>
+		
+		<!-- Div where results or feedback from the update action will be displayed -->
+		<br>
+		<div id="updateResult"></div>
+		
+		<!-- Linking to an external JavaScript file (UpdatePlayer.js) -->
+		<script src="../js/UpdatePlayer.js"></script>
+</body>
+
+</html>
