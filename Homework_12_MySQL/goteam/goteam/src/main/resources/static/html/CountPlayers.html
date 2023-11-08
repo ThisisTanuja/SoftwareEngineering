@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<htmt>
+
+<head>
+    
+    <!-- setting the title for the webpage -->
+	<title>GoTeam Player Management - Count Players</title>
+	
+	<!-- linking to an external stylesheet for styling the webpage -->
+	<link rel="stylesheet" type="text/css" href="../css/stylesheets.css">
+</head>
+
+<body>
+	
+	<!-- Main content container for the webpage -->
+	<div class="content-container">
+		
+		<!-- Button to navigate back to the homepage -->
+		<a href="index.html" class="home-button">Home</a>
+		
+		<!-- Display the main header for the webpage -->
+		<h1>Count Players</h1>
+		
+		<!-- Dropdown to select a sub-action (e.g., count all players or players in a team) -->
+		<label for="subActionSelect">Select a Sub-Action:</label>
+		<select id="subActionSelect">
+			<option value="">Select a sub-action</option>
+			<option value="countAllPlayers">Count All Players</option>
+			<option value="countPlayersInATeam">Count Players in a Team</option>
+		</select>
+		
+		<!-- Button to trigger the selected sub-action -->
+		<button id="countPlayersButton">Count</button>
+
+    	<!-- Input box for Team Name -->
+        <div id="teamNameInputContainer" style="display: none;">
+        	<br>
+            <label for="teamNameInput">Enter Team Name:</label>
+            <input type="text" id="teamNameInput">
+            <button id="countTeamPlayersButton">Count Team Players</button>
+        </div>
+
+	<!-- Div where results or feedback from the count action will be displayed -->
+	<br><br>
+    <div id="countResult"></div>
+    </div>
+	
+	<!-- Linking to an external JavaScript file (CountPlayers.js) -->
+    <script src="../js/CountPlayers.js"></script>
+
+</body>
+
+</htmt>
