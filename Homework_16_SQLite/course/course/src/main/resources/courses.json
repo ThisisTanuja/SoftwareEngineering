@@ -1,0 +1,26 @@
+[
+	{
+		"semester":"Fall 2023",
+		"course":"ACS 560",
+		"instructor":"Parker, Matthew",
+		"location":"KT 246"
+	},
+	{
+		"semester":"Spring 2024",
+		"course":"ACS 567",
+		"instructor":"Parker, Matthew",
+		"location":"KT 246"
+	},
+	{
+		"semester":"Spring 2024",
+		"course":"ACS 545",
+		"instructor":"Chen, Zesheng",
+		"location":"ET 112"
+	},
+	{
+		"semester":"Fall 2023",
+		"course":"CS 560",
+		"instructor":"Yoo, Jin",
+		"location":"ET 116"
+	}
+]
