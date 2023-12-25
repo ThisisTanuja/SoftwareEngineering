@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- setting the title for the webpage -->
+	<title>GoTeam Player Management - Top Goal Scorer</title>
+
+	<!-- linking to an external stylesheet for styling the webpage -->
+	<link rel="stylesheet" type="text/css" href="../css/stylesheets.css">
+</head>
+
+<body>
+
+	<!-- Main content container for the webpage -->
+	<div class="content-container">
+
+		<!-- Button to navigate back to the homepage -->
+		<a href="index.html" class="home-button">Home</a>
+
+		<!-- Display the main header for the webpage -->
+		<h1>Top Goal Scorer</h1>
+
+		<!-- Input for badge name -->
+		<div id="badgeInputContainer" style="display: block;">
+			<br>
+			<label for="badgeInput">Enter Badge (Bronze, Silver, Gold):</label>
+			<input type="text" id="badgeInput">
+			<br><br>
+			<button id="searchButton">Search</button>
+		</div>
+
+		<!-- Display the result -->
+		<br>
+		<div id="topGoalScorerResult"></div>
+
+		<!-- Linking the external JavaScript file -->
+		<script src="../js/TopGoalScorer.js"></script>
+</body>
+
+</html>
